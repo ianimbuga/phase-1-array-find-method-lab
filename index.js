@@ -5,16 +5,16 @@ function superbowlWin(record){
 }
 
 function superbowlWin(record) {
-    // Assuming 'record' is an array of objects with 'year' and 'result' properties
+    
     const win = record.find(game => game.result === 'W');
     return win ? win.year : undefined;
 }
 
-// Example usage:
+
 const broncosRecord = [
     { year: '2015', result: 'W' },
     { year: '2016', result: 'L' },
-    // other records
+   
 ];
 
-console.log(superbowlWin(broncosRecord)); // Should output '2015'
+console.log(superbowlWin(broncosRecord)); 
